@@ -407,7 +407,7 @@ print("Execution time: %s seconds \n" % "{0:.5}".format(end-start))
 diff_accuracy = list(np.array(accuracy_selection) - np.array(accuracy_all))
 diff_cvs = list(np.array(cvs_selection) - np.array(cvs_all))
 
-d = {'accuracy_all':accuracy_all, 'accuracy_selection':accuracy_all, 'diff_accuracy':diff_accuracy,
+d = {'accuracy_all':accuracy_all, 'accuracy_selection':accuracy_selection, 'diff_accuracy':diff_accuracy,
      'cvs_all':cvs_all, 'cvs_selection':cvs_all, 'diff_cvs':diff_cvs,}
 
 index = ['SGD', 'SVC', 'NuSVC', 'LinearSVC', 'KNeighbors', 'GaussianNB', 'RandomForest', 'ExtraTrees', 'DecisionTree']
